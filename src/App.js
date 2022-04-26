@@ -1,7 +1,15 @@
+import { Container, Divider } from '@chakra-ui/react';
+import Table from './components/Table';
+import VoteHistory from './components/VoteHistory';
+
 function App() {
   return (
     <div className='App'>
-      <h1>Hello World</h1>
+      <Container maxW='container.xl'>
+        <Table />
+      </Container>
+      <Divider marginY='1rem' />
+      <VoteHistory />
     </div>
   );
 }
